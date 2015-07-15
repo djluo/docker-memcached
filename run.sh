@@ -31,7 +31,7 @@ _port
 _run() {
   local mode="-d --restart=always"
   local name="$container_name"
-  local cmd="/usr/local/bin/memcached -u docker"
+  local cmd=""
 
   [ "x$1" == "xdebug" ] && _run_debug
 

@@ -25,7 +25,7 @@ unless (getpwuid("$uid")){
 # 切换当前运行用户,先切GID.
 #$GID = $EGID = $gid;
 #$UID = $EUID = $uid;
-#$( = $) = $gid; die "switch gid error\n" if $gid != $( ;
-#$< = $> = $uid; die "switch uid error\n" if $uid != $< ;
+$( = $) = $gid; die "switch gid error\n" if $gid != $( ;
+$< = $> = $uid; die "switch uid error\n" if $uid != $< ;
 
 exec(@ARGV);

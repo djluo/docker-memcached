@@ -7,4 +7,4 @@ ADD ./entrypoint.pl /entrypoint.pl
 
 ENTRYPOINT ["/entrypoint.pl"]
 USER       root
-CMD        ["/usr/bin/memcached"]
+CMD        ["/usr/local/bin/memcached"]
